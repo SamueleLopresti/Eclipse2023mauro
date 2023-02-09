@@ -1,0 +1,98 @@
+package EserciziAllenamento;
+
+public class Esempoi {
+
+	int n;
+
+		public Esempoi(int n) {
+
+		this.n = n;
+	}
+
+		public void tipo1() {
+			int [] numeriInseriti = new int[n];
+			for (int i = 0; i < n; i++) {
+				//System.out.println("Inserisci un numer0 da 1 a 10");
+				numeriInseriti [i] = (int) (Math.random()*10)+1;
+				
+			}
+			int [] numeriMisteriosi = new int [n] ;
+			for (int i = 0; i < numeriMisteriosi.length; i++) {
+				numeriMisteriosi [i] = (int) (Math.random()*10)+1;
+			}
+			int ciclo = numeriMisteriosi.length;
+			int risultato = 0;
+			long start = System.currentTimeMillis();
+			for (int i = 0; i < numeriInseriti.length; i++) {
+				for (int j = 0; j < ciclo; j++) {
+					if (numeriInseriti[i] == numeriMisteriosi[j]) {
+						int temp;
+						temp = numeriMisteriosi[ciclo-1];
+						numeriMisteriosi[ciclo-1] = numeriMisteriosi[j];
+						numeriMisteriosi[j] = temp;
+						ciclo--;
+						risultato++;
+						break;
+					}	
+				}	
+			}
+			if (risultato == numeriMisteriosi.length) {
+				System.out.println("hai trovato tutti i numeri ");
+				
+			}else {
+				System.out.println("hai trovato: " + risultato + " numeri su: " + numeriMisteriosi.length);
+			}
+			long stop = System.currentTimeMillis();
+			System.out.println((stop-start));
+		}
+		
+		public void tipo2 () {
+			long start = System.currentTimeMillis();
+			
+			int [] numeriInseriti = new int[n];
+			for (int i = 0; i < n; i++) {
+				//System.out.println("Inserisci un numer0 da 1 a 10");
+				numeriInseriti [i] = (int) (Math.random()*10)+1;
+				
+			}
+			
+			 int [][] numeriMisteriosi = new int [2][n] ;
+			
+			for (int i = 0; i < n; i++) {
+				numeriMisteriosi [0][i] = -1;
+				numeriMisteriosi [1][i] =(int) (Math.random()*10)+1;
+					
+			     }
+			
+			for (int i = 0; i < n; i++) {
+				for (int j = 0; j < n; j++) {
+					if ( numeriMisteriosi [0][j] == -1 && numeriInseriti[i] == numeriMisteriosi [1][j]) {
+						numeriMisteriosi [0][j] =1;
+						break;
+				     }
+				}
+				
+			}
+			
+			
+			
+			int k =0;
+			for (int i = 0; i < n; i++) {
+				if (numeriMisteriosi [0][i] == 1) {
+					//System.out.println(numeriMisteriosi[1][i] + "   " + numeriInseriti[i]);
+					k++;
+				}
+				
+			}
+			if (k == n) {
+				System.out.println("trovati tutti i numeri");
+			}else {
+				System.out.println("trovati: " + k + " numeri su: " + n);
+			}
+			long stop = System.currentTimeMillis();
+			System.out.println((stop-start));
+		}
+		
+}
+		
+		
