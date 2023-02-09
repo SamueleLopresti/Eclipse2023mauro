@@ -1,0 +1,11 @@
+package azienda;
+
+public interface InforzazioniBase {
+	public String getFirstName();
+
+	public String getLastName();
+	
+	public int getnMatricola();
+	
+
+}

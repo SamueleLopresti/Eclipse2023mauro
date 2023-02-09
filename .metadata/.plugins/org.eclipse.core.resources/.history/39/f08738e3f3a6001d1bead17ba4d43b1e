@@ -1,0 +1,18 @@
+package azienda;
+
+public class Dipendente {
+	String firstName;
+	String lastName;
+	int nMatricola;
+	
+	
+	public Dipendente(String firstName, String lastName, int nMatricola) {
+		
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.nMatricola = nMatricola;
+	}
+	
+	
+
+}

@@ -1,0 +1,21 @@
+package azienda;
+
+public class Guardia extends Employee implements Pagamento,InforzazioniBase{
+	private double account ;
+
+	
+
+	public Guardia(String firstName, String lastName, int nMatricola, double account) {
+		super(firstName, lastName, nMatricola);
+		this.account = account;
+	}
+
+
+
+	@Override
+	public double getSalary() {
+		// TODO Auto-generated method stub
+		return getPagaBase() + 500 ;
+	}
+
+}

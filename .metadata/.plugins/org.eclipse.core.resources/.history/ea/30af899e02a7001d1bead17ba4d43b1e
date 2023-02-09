@@ -1,0 +1,52 @@
+package azienda;
+
+public class Employee implements InforzazioniBase{
+	private String firstName;
+	private String lastName;
+	private int nMatricola;
+	private double pagaBase = 1200;
+	
+	public Employee(String firstName, String lastName, int nMatricola) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.nMatricola = nMatricola;
+	}
+
+	
+
+	public double getPagaBase() {
+		return pagaBase;
+	}
+
+
+
+	@Override
+	public String getFirstName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+	@Override
+	public String getLastName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+	@Override
+	public int getnMatricola() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+	
+	
+	
+	
+
+}

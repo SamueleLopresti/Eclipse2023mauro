@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Users\eleum\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1422948384.index
+\Prj08_CartaForbiciSasso\src\main\java
+C:\Users\eleum\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2403940417.index
+\Prj04_TodoList\src\main\java

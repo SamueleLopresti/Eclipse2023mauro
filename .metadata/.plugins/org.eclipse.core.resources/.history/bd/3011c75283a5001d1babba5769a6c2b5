@@ -1,0 +1,157 @@
+package EserciziAllenamento;
+
+import java.util.Scanner;
+/*
+ Scrivere un programma che simula il gioco dei 3 numeri casuali.
+
+Definire un'unica classe con un metodo main che contiene tutte le istruzioni del programma.
+
+In particolare il programma deve:
+
+generare 3 numeri casuali e salvarli in tre variabili;
+creare uno Scanner per l'acquisizione dei valori da tastiera;
+Finchè l'utente non indovina i tre numeri:
+
+chiedere tre numeri all'utente;
+confrontare il primo numero chiesto con il primo numero generato casualmente; stessa cosa con il secondo ed il terzo;
+per ogni numero stampare se l'ha indovinato o meno
+ */
+
+public class es01_Gioco3Numeri {
+	public static void main (String [] args) {
+	//int a = 1;
+	//int b = (int) (Math.random()*10)+1;
+	//int c = (int) (Math.random()*10)+1;
+	//Scanner scanner = new Scanner(System.in);
+	/*int [] numeriMisteriosi = new int [10_000_000] ;
+	for (int i = 0; i < numeriMisteriosi.length; i++) {
+		numeriMisteriosi [i] = (int) (Math.random()*10)+1;
+	}*/
+	
+	int [] numeriInseriti = new int[10_000_000];
+	for (int i = 0; i < numeriInseriti.length; i++) {
+		//System.out.println("Inserisci un numer0 da 1 a 10");
+		numeriInseriti [i] = (int) (Math.random()*10)+1;
+		
+	}
+	//int uno = scanner.nextInt();
+	//int due = scanner.nextInt();
+	//int tre = scanner.nextInt();
+
+	
+	/*if (uno == a || due == a || tre == a) {
+		if (uno == b || due == b || tre == b) {
+			if (uno == c || due == c || tre == c) {
+				System.out.println("tutti i numeri giust");
+			}else {
+	        	System.out.println("nessuna corrispondeza");
+	        }
+			
+		}if (uno == c || due == c || tre == c) {
+			System.out.println("trovato a e c");
+		}else {
+        	System.out.println("solo a");
+        }
+	}else if (uno == b || due == b || tre == b) {
+			if (uno == c || due == c || tre == c) {
+				System.out.println("solo due numeri giustia a b ");
+				
+			}
+	} else if (uno == c || due == c || tre == c) {
+		System.out.println("un solo numero giusto");
+			
+		}else {
+        	System.out.println("nessuna corrispondeza");
+        }*/
+	
+	/*int ciclo = numeriMisteriosi.length;
+	int risultato = 0;
+	long start = System.currentTimeMillis();
+	for (int i = 0; i < numeriInseriti.length; i++) {
+		for (int j = 0; j < ciclo; j++) {
+			if (numeriInseriti[i] == numeriMisteriosi[j]) {
+				int temp;
+				temp = numeriMisteriosi[ciclo-1];
+				numeriMisteriosi[ciclo-1] = numeriMisteriosi[j];
+				numeriMisteriosi[j] = temp;
+				ciclo--;
+				risultato++;
+				break;
+			}	
+		}
+		
+	}
+	if (risultato == numeriMisteriosi.length) {
+		System.out.println("hai trovato tutti i numeri ");
+		
+	}else {
+		System.out.println("hai trovato: " + risultato + " numeri su: " + numeriMisteriosi.length);
+	}
+	long stop = System.currentTimeMillis();
+	System.out.println((stop-start));*/
+	
+	
+	
+	long start = System.currentTimeMillis();
+	int [][] numeriMisteriosi = new int [2][10_000_000] ;
+	
+	for (int i = 0; i < numeriMisteriosi[1].length; i++) {
+		numeriMisteriosi [0][i] =-1;
+		numeriMisteriosi [1][i] =(int) (Math.random()*10)+1;
+			
+	     }
+	for (int i = 0; i < numeriMisteriosi [1].length; i++) {
+		for (int j = 0; j < numeriMisteriosi[1].length; j++) {
+			if (numeriInseriti[i] == numeriMisteriosi [1][j]) {
+				numeriMisteriosi [0][j] =1;
+				
+		     }
+		}
+		
+	}
+	
+	
+	
+	int k =0;
+	for (int i = 0; i < numeriMisteriosi[1].length; i++) {
+		if (numeriMisteriosi [0][i] == 1) {
+			k++;
+		}
+		
+	}
+	if (k == numeriMisteriosi[1] .length) {
+		System.out.println("trovati tutti i numeri");
+	}else {
+		System.out.println("trovati: " + k + " numeri su; " + numeriMisteriosi[1].length);
+	}
+	long stop = System.currentTimeMillis();
+	System.out.println((stop-start));
+	
+	
+	
+	
+	
+	/*for(int i = 0 ;i<numeriInseriti.length ; i++) {
+		if (numeriMisteriosi[0]== numeriInseriti[i]) {
+			System.out.println("1)numero indovonato");
+			
+		}
+		System.out.println();
+		if (numeriMisteriosi[1]== numeriInseriti[i]) {
+			System.out.println("2)numero indovonato");
+			
+		}
+		System.out.println();
+		if (numeriMisteriosi[2]== numeriInseriti[i]) {
+			System.out.println("3)numero indovonato");
+			
+		}
+	}
+	
+	}*/
+	
+	
+	}
+	
+
+}

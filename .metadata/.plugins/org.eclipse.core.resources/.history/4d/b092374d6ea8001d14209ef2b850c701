@@ -1,0 +1,40 @@
+package gioco;
+
+import java.util.Scanner;
+
+public class CartaForbiceSasso {
+	public static void main(String[] args) {
+		String sceltaUmano = chiediUmano();
+		String sceltaPC = chiediPC();
+		String result = valuta(sceltaUmano,sceltaPC);
+		System.out.println("ha vinto: " + result);
+	}
+
+	private static String valuta(String sceltaUmano, String sceltaPC) {
+		if (sceltaUmano.equalsIgnoreCase(sceltaPC)) {
+			return "pareggio";
+		}else if (sceltaUmano.compareToIgnoreCase("forbici")) {
+			
+		}
+		return null;
+	}
+
+	private static String chiediPC() {
+		double casuale =Math.random();
+		if (casuale<0.33) {
+			return "carta";
+			
+		}else if (casuale<0.66) {
+			return "forbici";
+		}
+		return "sasso";
+	}
+
+	private static String chiediUmano() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("quale scelta vuoi fare sasso,carta o forbici");
+		
+		return scanner.next();
+	}
+
+}

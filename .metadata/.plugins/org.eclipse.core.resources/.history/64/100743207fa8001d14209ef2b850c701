@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>carta forbici sasso</h1>
+<div>
+
+<a href="#"><img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fpreviews.123rf.com%2Fimages%2Fgladkov%2Fgladkov1108%2Fgladkov110800268%2F10332310-pezzo-di-carta-strappato-il-vecchio-fondo-di-carta-schiacciato-annata-carta-retr%25C3%25B2.jpg&imgrefurl=https%3A%2F%2Fit.123rf.com%2Fphoto_10332310_pezzo-di-carta-strappato-il-vecchio-fondo-di-carta-schiacciato-annata-carta-retr%25C3%25B2.html&tbnid=ynQYj168FS-YaM&vet=12ahUKEwjIt6PUxYj9AhUXxQIHHY2fB34QMygAegUIARDMAQ..i&docid=2UFx01fRyhg0WM&w=1300&h=866&q=immagine%20pezzo%20di%20carta&ved=2ahUKEwjIt6PUxYj9AhUXxQIHHY2fB34QMygAegUIARDMAQ"></a>
+<a href=""></a>
+<a href=""></a>
+
+
+
+
+</div>
+</body>
+</html>

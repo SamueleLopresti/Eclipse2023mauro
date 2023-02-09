@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Prj08_CartaForbiciSasso">
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <property name="context-root" value="Prj08_CartaForbiciSasso"/>
+        <property name="java-output-path" value="/Prj08_CartaForbiciSasso/build/classes"/>
+    </wb-module>
+</project-modules>

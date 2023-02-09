@@ -1,0 +1,13 @@
+package interfaccie;
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Rettangolo rettangolo = new Rettangolo (2,2);
+		Triangolo triangolo = new Triangolo (2,2);
+		rettangolo.getArea();
+
+	}
+
+}

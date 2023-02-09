@@ -1,0 +1,10 @@
+package EserciziAllenamento;
+
+public class es01_Gioco3Numeri {
+	public static void main (String [] args) {
+	int primoNumero = (int) (Math.random()+10);
+	System.out.println(primoNumero);
+	}
+	
+
+}

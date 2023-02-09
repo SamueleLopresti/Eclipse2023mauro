@@ -1,0 +1,20 @@
+package azienda;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Guardia giorgio = new Guardia("giorgio", "rossi", 98729,1999.55);
+		
+		Company sas = new Company( 100_000);
+		sas.addEmployee(giorgio);
+		System.out.println(sas.payEmployee(););
+		
+		
+		
+		
+
+	}
+
+}

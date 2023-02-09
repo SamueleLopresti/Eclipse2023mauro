@@ -1,0 +1,30 @@
+package gioco;
+
+import org.eclipse.jdt.internal.compiler.parser.Scanner;
+
+public class CartaForbiceSasso {
+	public static void main(String[] args) {
+		String sceltaUmano = chiediUmano();
+		String sceltaPC = chiediPC();
+		String result = valuta(sceltaUmano,sceltaPC);
+		System.out.println("ha vinto: " + result);
+	}
+
+	private static String valuta(String sceltaUmano, String sceltaPC) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private static String chiediPC() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private static String chiediUmano() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("quale scelta vuoi fare sasso,carta o forbici");
+		
+		return scanner.;
+	}
+
+}

@@ -1,0 +1,29 @@
+package azienda;
+
+import java.util.Iterator;
+
+public class Company  {
+	private double capitale ;
+	private Employee employee [];
+	int cont;
+	//Employee[] employee
+	public Company( ) {
+		this.capitale = 100_000;
+		this.employee = new Employee [10];
+		this.cont = 0;
+	}
+	
+	public void addEmployee () {
+			employee [cont]= new Employee("", "",0 );
+			cont++;
+	}
+	
+	
+	
+
+	
+	
+
+	
+
+}

@@ -1,0 +1,12 @@
+INDEX VERSION 1.4+C:\Users\eleum\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1422948384.index
+2459907463.index
+650890025.index
+3778252118.index
+1907255423.index
+1821531120.index
+1507517395.index
+619900722.index
+891042559.index
+1656106024.index
+234215350.index

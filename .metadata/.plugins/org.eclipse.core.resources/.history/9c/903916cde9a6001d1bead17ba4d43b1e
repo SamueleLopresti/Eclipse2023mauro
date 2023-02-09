@@ -1,0 +1,6 @@
+package interfaccie;
+
+public interface Shape {
+	double getArea();
+
+}

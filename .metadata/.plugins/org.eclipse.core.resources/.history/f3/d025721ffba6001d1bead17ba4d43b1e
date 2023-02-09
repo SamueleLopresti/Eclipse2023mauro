@@ -1,0 +1,25 @@
+package azienda;
+
+public class Company  {
+	private double capitale ;
+	private Employee employee [];
+	
+	public Company( ) {
+		this.capitale = 100_000;
+		this.employee = new Employee [10];
+	}
+	
+	public void addEmployee () {
+		Employee employee = new Employee(null, null, 0);
+		
+	}
+	
+	
+	
+
+	
+	
+
+	
+
+}

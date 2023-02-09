@@ -1,0 +1,89 @@
+package azienda;
+
+public class Account   {
+	
+	
+    
+	private double fondo;
+	
+	
+
+	public Account(double fondo) {
+	
+		this.fondo = fondo;
+	}
+
+	
+	
+
+	
+	
+	public double getFondo() {
+		return fondo;
+	}
+
+
+
+
+
+
+	public void setFondo(double fondo) {
+		this.fondo = fondo;
+	}
+
+
+
+
+
+
+	public void transferTo (Employee employee, double ammount) {
+		employee.setAccount((employee.account.fondo+ammount));
+		this.fondo -= ammount;
+		
+	}
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	@Override
+	public String toString() {
+		return "Account [fondo=" + fondo + "]";
+	}
+
+
+
+
+
+
+	
+	
+	
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+
+}

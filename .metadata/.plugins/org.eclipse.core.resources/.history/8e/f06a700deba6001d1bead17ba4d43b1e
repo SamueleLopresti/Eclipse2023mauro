@@ -1,0 +1,24 @@
+package interfaccie;
+
+public class Rettangolo implements Shape {
+	private double base;
+	private double height;
+	
+	
+
+	public Rettangolo(double base, double height) {
+		super();
+		this.base = base;
+		this.height = height;
+	}
+
+
+
+
+	@Override
+	public double getArea() {
+		// TODO Auto-generated method stub
+		return base*height;
+	}
+
+}

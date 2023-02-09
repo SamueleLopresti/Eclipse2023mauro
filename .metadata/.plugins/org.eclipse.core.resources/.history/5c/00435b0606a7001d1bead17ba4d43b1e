@@ -1,0 +1,17 @@
+package azienda;
+
+public class Programmatore extends Employee implements Pagamento{
+
+	public Programmatore(String firstName, String lastName, int nMatricola) {
+		super(firstName, lastName, nMatricola);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public double getSalary() {
+		// TODO Auto-generated method stub
+		return getPagaBase() + 500 ;
+	}
+
+}
+ 

@@ -1,0 +1,17 @@
+package interfaccie;
+
+public class PlayerFIFA implements Person {
+
+	@Override
+	public String getfirstName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getlastName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

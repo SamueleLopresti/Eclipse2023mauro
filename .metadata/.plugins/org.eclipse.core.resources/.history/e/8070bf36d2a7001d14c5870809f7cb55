@@ -1,0 +1,39 @@
+package azienda;
+
+public class Account  implements Pagamento {
+	
+	
+
+	public Account() {
+		super();
+	}
+	double ammount;
+	
+
+	
+	
+	public void transferTo (Employee hiredEmployee,double ammount) {
+		hiredEmployee.setAccount(+ammount);
+		hiredEmployee.setAccount(-ammount);
+		
+		
+	}
+	@Override
+	public double getSalary() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	@Override
+	public double getAccount() {
+		// TODO Auto-generated method stub
+		return ammount;
+	}
+	
+	@Override
+	public double setAccount(double account) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+
+}

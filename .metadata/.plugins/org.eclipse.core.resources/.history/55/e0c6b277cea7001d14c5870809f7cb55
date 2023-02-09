@@ -1,0 +1,25 @@
+package azienda;
+
+public class Account implements Pagamento{
+	double ammount;
+
+	public double getAmmount() {
+		return ammount;
+	}
+	public void transferTo (String AccountTo,double ammount) {
+		
+		
+	}
+	@Override
+	public double getSalary() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	@Override
+	public double getAccount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+
+}

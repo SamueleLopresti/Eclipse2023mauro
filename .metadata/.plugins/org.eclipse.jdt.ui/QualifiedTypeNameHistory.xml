@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="model.Dado"/>
+    <fullyQualifiedTypeName name="model.Todo"/>
+    <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ForegroundAction"/>
+    <fullyQualifiedTypeName name="eserciziProve.CambiaCanale"/>
+    <fullyQualifiedTypeName name="eserciziProve.RemoteControl"/>
+    <fullyQualifiedTypeName name="javax.swing.undo.AbstractUndoableEdit"/>
+    <fullyQualifiedTypeName name="modello.Punto"/>
+    <fullyQualifiedTypeName name="modello.Segmento"/>
+    <fullyQualifiedTypeName name="test.TriangoloTest"/>
+    <fullyQualifiedTypeName name="modello.Triangolo"/>
+    <fullyQualifiedTypeName name="modello.Rettangolo"/>
+    <fullyQualifiedTypeName name="modello.Quadrato"/>
+    <fullyQualifiedTypeName name="javax.xml.parsers.FactoryConfigurationError"/>
+    <fullyQualifiedTypeName name="modello.FiguraGeometrica"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="Test.DipendetiTest"/>
+    <fullyQualifiedTypeName name="Model.Dipendente"/>
+    <fullyQualifiedTypeName name="Model.Fattorino"/>
+    <fullyQualifiedTypeName name="Model.Impiegato"/>
+    <fullyQualifiedTypeName name="Model.Dirigente"/>
+    <fullyQualifiedTypeName name="controller.TodoCtrl"/>
+    <fullyQualifiedTypeName name="EserciziAllenamento.esempoi"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="interfaccie.Shape"/>
+    <fullyQualifiedTypeName name="interfaccie.Rettangolo"/>
+    <fullyQualifiedTypeName name="interfaccie.Person"/>
+    <fullyQualifiedTypeName name="interfaccie.Player"/>
+    <fullyQualifiedTypeName name="azienda.Company"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="azienda.Guardia"/>
+    <fullyQualifiedTypeName name="azienda.Programmatore"/>
+    <fullyQualifiedTypeName name="azienda.InforzazioniBase"/>
+    <fullyQualifiedTypeName name="interfaccie.Employee"/>
+    <fullyQualifiedTypeName name="azienda.Pagamento"/>
+    <fullyQualifiedTypeName name="azienda.Account"/>
+    <fullyQualifiedTypeName name="azienda.Employee"/>
+    <fullyQualifiedTypeName name="org.eclipse.jdt.internal.compiler.parser.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
+    <fullyQualifiedTypeName name="gioco.CartaForbiceSasso"/>
+</qualifiedTypeNameHistroy>

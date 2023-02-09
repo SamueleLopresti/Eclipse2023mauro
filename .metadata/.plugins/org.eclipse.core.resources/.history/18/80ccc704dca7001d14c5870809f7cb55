@@ -1,0 +1,49 @@
+package azienda;
+
+
+
+public class Company  {
+	
+	private Employee employee [];
+	int cont;
+	int i;
+	Account account;
+	
+	public Company(double fondo) {
+		this.employee = new Employee [10];
+		this.cont = 0;
+		this.i = 0;
+		this.account = new Account(fondo);
+	}
+	
+	public void addEmployee (Employee hiredEmployee) {
+		try {
+			employee[cont] = hiredEmployee;
+			cont++;
+		}catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("raggiunto il massimo");
+		}
+			
+	}
+	
+	public void  payEmployee () {
+		double sum = 0;
+		while (i<cont) {
+			account.transferTo(employee[i], employee[i].getSalary());
+			i++;
+		}
+		
+		
+	}
+
+	
+	
+	
+	
+
+	
+	
+
+	
+
+}

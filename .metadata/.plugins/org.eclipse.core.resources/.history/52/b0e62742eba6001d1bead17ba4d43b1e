@@ -1,0 +1,16 @@
+package interfaccie;
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Rettangolo r = new Rettangolo (3.8,5.0);
+		Triangolo t = new Triangolo (3.0,5.0);
+		double arear = r.getArea();
+		System.out.println("r area " + arear);
+		double areat = t.getArea();
+		System.out.println("t area " + areat);
+
+	}
+
+}

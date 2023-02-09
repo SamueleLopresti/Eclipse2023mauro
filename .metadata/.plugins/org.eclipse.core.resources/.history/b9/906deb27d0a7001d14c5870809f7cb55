@@ -1,0 +1,7 @@
+package azienda;
+
+public interface Pagamento {
+	double getSalary();
+	double getAccount();
+
+}

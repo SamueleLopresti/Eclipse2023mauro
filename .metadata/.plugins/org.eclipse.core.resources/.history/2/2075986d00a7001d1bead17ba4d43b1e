@@ -1,0 +1,34 @@
+package azienda;
+
+import java.util.Iterator;
+
+public class Company  {
+	private double capitale ;
+	private Employee employee [];
+	int cont;
+	
+	public Company() {
+		this.capitale = 100_000;
+		this.employee = new Employee [10];
+		this.cont = 0;
+	}
+	
+	public void addEmployee () {
+		if (cont<10) {
+			employee = new Employee[cont];
+			cont++;
+		}else {
+			System.out.println("raggiunto numero massimo di impiegati");
+		}
+			
+	}
+	
+	
+	
+
+	
+	
+
+	
+
+}

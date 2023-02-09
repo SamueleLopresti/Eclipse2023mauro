@@ -1,0 +1,29 @@
+package azienda;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Guardia giorgio = new Guardia( "giorgio", "rossi", 98729);
+		Programmatore piero = new Programmatore("Piero", "Salti", 749947);
+		Company sas = new Company( 100_000);
+		sas.addEmployee(giorgio);
+		sas.addEmployee(piero);
+		System.out.println(sas.payEmployee());
+		
+		
+		
+		Account giacomo = new Account(2000.00);		
+		Account marta = new Account(5000.00);	
+		giacomo.transferTo(marta, 1000);
+		System.out.println(giacomo.getAccount());
+		System.out.println(marta.getAccount());
+		
+		
+		
+		
+		
+
+	}
+
+}

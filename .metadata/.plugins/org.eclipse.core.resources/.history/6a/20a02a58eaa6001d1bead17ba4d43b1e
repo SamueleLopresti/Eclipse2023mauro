@@ -1,0 +1,22 @@
+package interfaccie;
+
+public class Triangolo implements Shape {
+	private double base;
+	private double height;
+
+
+	public Triangolo(double base, double height) {
+		super();
+		this.base = base;
+		this.height = height;
+	}
+
+
+
+	@Override
+	public double getArea() {
+		
+		return (base*altezza)/2;
+	}
+
+}

@@ -1,0 +1,13 @@
+package interfaccie;
+
+public class Triangolo implements Shape {
+	private double base;
+	private double altezza;
+
+	@Override
+	public double getArea() {
+		
+		return (base*altezza)/2;
+	}
+
+}

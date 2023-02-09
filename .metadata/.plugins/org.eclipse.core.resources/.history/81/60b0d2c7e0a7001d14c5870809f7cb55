@@ -1,0 +1,29 @@
+package azienda;
+
+public class Programmatore extends Employee implements Pagamento,InforzazioniBase{
+	
+
+	
+
+	
+
+	
+	public Programmatore(String firstName, String lastName, int nMatricola, double fondo) {
+		super(firstName, lastName, nMatricola, fondo);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public double getSalary() {
+		// TODO Auto-generated method stub
+		return getPagaBase() +50 ;
+	}
+	
+	public void setFondo(double fondo) {
+		this.fondo = fondo;
+	}
+	
+	
+	
+}
+ 

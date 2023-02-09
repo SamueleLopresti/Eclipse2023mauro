@@ -1,0 +1,47 @@
+package azienda;
+
+import java.util.Iterator;
+
+public class Company implements Pagamento {
+	private double capitale ;
+	private Employee employee [];
+	int cont;
+	
+	public Company() {
+		this.capitale = 100_000;
+		this.employee = new Employee [10];
+		this.cont = 0;
+	}
+	
+	public void addEmployee (Employee hiredEmployee) {
+		try {
+			employee[cont] = hiredEmployee;
+			cont++;
+		}catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("raggiunto il massimo");
+		}
+			
+	}
+	
+	public double payEmployee () {
+		for (int i = 0; i < employee.length; i++) {
+			employee [i] get
+		}
+		
+	}
+
+	@Override
+	public double getSalary() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+	
+
+	
+	
+
+	
+
+}

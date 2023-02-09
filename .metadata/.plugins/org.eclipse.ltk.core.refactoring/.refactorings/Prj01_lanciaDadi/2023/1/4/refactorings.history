@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;interfaccia&apos; to &apos;view&apos;&#x0D;&#x0A;- Original project: &apos;Prj01_lanciaDadi&apos;&#x0D;&#x0A;- Original element: &apos;Prj01_lanciaDadi/src/interfaccia&apos;&#x0D;&#x0A;- Renamed element: &apos;Prj01_lanciaDadi/src/view&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;interfaccia&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;interfaccia" name="view" qualified="false" references="true" stamp="1674576292656" textual="false" version="1.0"/>
+</session>

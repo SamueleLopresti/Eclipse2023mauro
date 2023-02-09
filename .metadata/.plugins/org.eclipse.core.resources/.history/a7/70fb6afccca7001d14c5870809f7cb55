@@ -1,0 +1,15 @@
+package azienda;
+
+public class Account {
+	double ammount;
+
+	public double getAmmount() {
+		return ammount;
+	}
+	public void transferTo (String AccountTo,double ammount) {
+		
+		
+	}
+	
+
+}

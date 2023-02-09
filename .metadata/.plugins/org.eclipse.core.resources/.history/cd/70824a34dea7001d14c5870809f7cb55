@@ -1,0 +1,73 @@
+package azienda;
+
+public class Account  implements Pagamento {
+	
+	
+    
+	private double fondo;
+	
+	
+
+	public Account(double fondo) {
+	
+		this.fondo = fondo;
+	}
+
+	
+	
+
+	
+	
+	public void transferTo (Employee employee, double ammount) {
+		employee.setAccount(employee.getAccount().fondo+ammount);
+		this.fondo -= ammount;
+		
+	}
+
+
+
+
+
+
+	@Override
+	public double getSalary() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+
+
+
+
+	@Override
+	public Account getAccount() {
+		// TODO Auto-generated method stub
+		return getAccount();
+	}
+
+
+
+
+
+
+	@Override
+	public void setAccount(double fondo) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+
+}
