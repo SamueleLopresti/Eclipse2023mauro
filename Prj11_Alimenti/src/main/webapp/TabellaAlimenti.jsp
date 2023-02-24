@@ -13,6 +13,17 @@
 <h1>Alimenti</h1>
 
 <h2><%= request.getAttribute("titolo") %></h2>
+<%ArrayList<String> categorie = (ArrayList<String>)request.getAttribute("categorie"); %>
+<form action=''>
+<select name='cat'>
+<option>scegli una categoria</option>
+<%for (String categoria : categorie){ %>
+<option><%= categoria %></option>
+<%} %>
+</select>
+<input type="submit" value="cerca">
+</form>
+
 <table>
   <tr>
     <th>categoria</th>
@@ -26,6 +37,7 @@
   </tr>
   <%} %>
 </table>
+
 
 
 

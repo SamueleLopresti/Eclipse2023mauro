@@ -22,7 +22,15 @@ public class AlimentiMVC extends HttpServlet {
 		System.out.println("Mi hai chiamato via get");
 		//per passare dei parametri al jsp uso il metodo setAttribute()
 		request.setAttribute("titolo", "il mio sito di alimenti");
-		request.setAttribute("listaAlimenti",dao.getAlimenti() );
+		request.setAttribute("categorie", dao.getCategorie());
+		if(request.getParameter("cat")!=null) {
+			request.setAttribute("listaAlimenti",dao
+					    .getAlimentiByCategoria(request.getParameter("cat")) );
+		}else {
+			request.setAttribute("listaAlimenti",dao.getAlimenti() );
+		}
+		
+		
 		
 		
 		request.getRequestDispatcher("TabellaAlimenti.jsp").forward(request, response);
