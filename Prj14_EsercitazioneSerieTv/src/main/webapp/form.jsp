@@ -9,3 +9,25 @@
     <input type="submit" value="aggiungi">
 
 </form>
+
+<script>
+
+const URL = "https://api.tvmaze.com/singlesearch/shows?q=";
+const CAMPO = document.getElementById("titolo");
+const CAMPOIMG = document.getElementById("immagine");
+const CAMPOGENERE = document.getElementById("genere");
+CAMPO.onblur = function () {
+    let parola = this.value;
+    fetch(URL+parola)
+        .then(serie => serie.json())
+        .then(serie => {
+            console.log(serie);
+            console.log(serie.image.medium);
+            CAMPOIMG.value = serie.image.medium;
+            //CAMPOGENERE.value = serie.generes.Array(0);
+
+        })
+}
+
+
+</script>

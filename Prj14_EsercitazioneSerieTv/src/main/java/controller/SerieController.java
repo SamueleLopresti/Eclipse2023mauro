@@ -20,7 +20,6 @@ public class SerieController {
 	}
 	
 	public List<Serie> getAll(){
-		
 		try {
 			serie.clear();
 			serie.addAll(dao.getSerie());

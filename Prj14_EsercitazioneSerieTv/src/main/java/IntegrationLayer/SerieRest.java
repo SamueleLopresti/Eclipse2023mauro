@@ -2,6 +2,8 @@ package IntegrationLayer;
 
 import java.io.IOException;
 
+import org.json.JSONArray;
+
 import controller.SerieController;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -21,7 +23,13 @@ public class SerieRest extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append(service.getAll().toString());
+		
+		JSONArray array = new JSONArray(service.getAll());
+		
+		response.setContentType("application/json");	
+		response.addHeader("Access-Control-Allow-Origin", "*");
+		
+		response.getWriter().append(array.toString());
 	}
 	
 	@Override

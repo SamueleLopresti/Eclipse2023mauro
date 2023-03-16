@@ -1,7 +1,7 @@
 <%@page import="model.Serie"%>
 <%@page import="java.util.List"%>
 <h1>serie tv</h1>
-<table>
+<table class ="table table-dark">
 <%List<Serie> lista = (List<Serie>)request.getAttribute("elencoSerie"); %>
 <%for(Serie s :lista){ %>
     <tr>
